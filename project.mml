@@ -1,14 +1,14 @@
 {
   "bounds": [
-    -123.1732,
-    37.3003,
-    -121.8274,
-    38.389
+    -122.6734,
+    37.3996,
+    -122.0842,
+    38.1955
   ],
   "center": [
-    -122.4097,
-    37.7403,
-    8
+    -122.4042,
+    37.7729,
+    9
   ],
   "format": "png8",
   "interactivity": false,
@@ -83,7 +83,8 @@
       },
       "srs-name": "autodetect",
       "srs": "",
-      "name": "country-name"
+      "name": "country-name",
+      "status": "off"
     },
     {
       "geometry": "point",
@@ -94,7 +95,8 @@
       },
       "srs-name": "autodetect",
       "srs": "",
-      "name": "cities"
+      "name": "cities",
+      "status": "off"
     },
     {
       "geometry": "polygon",
@@ -120,11 +122,32 @@
       "srs-name": "autodetect",
       "srs": "",
       "name": "marine_label"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -124.40642800000002,
+        32.4326433,
+        -114.02866,
+        42.109752
+      ],
+      "id": "ROADS",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/brendan/Downloads/california.shapefiles/california_highway.shp",
+        "id": "ROADS",
+        "project": "pirate-map",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ROADS"
     }
   ],
-  "scale": 1,
-  "metatile": 2,
-  "name": "Pirate Map",
+  "scale": 3.1,
+  "metatile": 9,
+  "name": "Tiki Map",
   "description": "",
   "attribution": ""
 }

@@ -1,20 +1,31 @@
-@water: #e6d9b8;
+@water: #755b4a;
 
 Map { background-color: @water; }
 
 
 #countries {
-  ::outline1, ::outline2, ::outline3 {
-    line-color: @water;
+  ::outline1, ::outline2, ::outline3, ::outline4, ::outline5, ::outline6 {
+    line-color: lighten(@water,10);
     line-width: 1;
     line-join: round;
     line-opacity: 0.5;
     line-comp-op: multiply;
   }
+  ::outline7 {
+    line-color: darken(@water,20);
+    line-width: 2;
+    line-join: round;
+    line-opacity: 0.5;
+    line-comp-op: multiply;
+    line-smooth: 1;
+  }
   ::outline1 { line-smooth: 12; }
   ::outline2 { line-smooth: 24; }
   ::outline3 { line-smooth: 48; }
-  polygon-fill: lighten(@water,10);
+  ::outline4 { line-smooth: 72; }
+  ::outline5 { line-smooth: 128; }
+  ::outline6 { line-smooth: 256; }
+  polygon-fill: @water;
   polygon-opacity: 0.6;
 }
 
@@ -32,7 +43,7 @@ Map { background-color: @water; }
   ::outline2 { line-smooth: 24; }
   ::outline3 { line-smooth: 48; }
   polygon-fill: #367;
-  polygon-opacity: 0.05;
+  polygon-opacity: 0.5;
   polygon-comp-op: color-burn;
 }
 
@@ -45,7 +56,11 @@ Map { background-color: @water; }
   polygon-pattern-file: url(img/noise512.png);
   polygon-pattern-comp-op: soft-light;
 }
-#paper::folds {
-  polygon-pattern-file: url(img/paperfolds_512.png);
-  polygon-pattern-comp-op: color-burn;
+
+
+#ROADS {
+  line-width:1;
+  line-color:darken(@water, 20);
+  line-comp-op: multiply;
+  line-opacity: 0.5;
 }
